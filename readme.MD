@@ -20,3 +20,15 @@ Change the simulation parameters in the `template.txt` file.
 Predicting the Mackey Glass Equation using 25 STOs. The red line is the prediction, the blue line is the actual data.
 ![alt text](https://github.com/jedcheng/spin-torque-oscillators-reservoir-computing/blob/main/Results/25_Testing.png?raw=true)
 
+
+Of course it is vital to compare the results without the reservoir computing but just linear regression. Simple ML models usually "predicts" the data by reusing the previous data when dealing with time series data. 
+
+
+The prediction plot might looks good.
+![alt text](https://github.com/jedcheng/spin-torque-oscillators-reservoir-computing/blob/main/Results/naive_linear_regression.png?raw=true)
+
+But when we zoom in, it is clear that the prediction is just reusing the previous data rendering the model useless.
+![alt text](https://github.com/jedcheng/spin-torque-oscillators-reservoir-computing/blob/main/Results/naive_linear_regression_zoom.png?raw=true)
+
+
+
