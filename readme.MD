@@ -15,3 +15,8 @@ Change the simulation parameters in the `template.txt` file.
 ## Post-processing
 1. Run `main.py` to generate the plots and the error metrics.
 2. Run `plot_final_result.py` to generate a plot of the MSE for configurations with different number of STOs.
+
+## Results
+Predicting the Mackey Glass Equation using 25 STOs. The red line is the prediction, the blue line is the actual data.
+![alt text](https://github.com/jedcheng/spin-torque-oscillators-reservoir-computing/blob/main/Results/25_Testing.png?raw=true)
+
