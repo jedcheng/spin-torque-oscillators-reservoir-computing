@@ -1,6 +1,6 @@
 # Reservoir Computing for Time Series Prediction Using Spin Torque Oscillators
 
-A proof of concept reservoir computing using a pool of Spin Torque Oscillators (STOs) to predict time series data. The STOs are simulated using the Mumax3. 
+A proof of concept reservoir computing using a pool of Spin Torque Oscillators (STOs) to predict time series data (Mackey Glass Equation). The STOs are simulated using the Mumax3. 
 
 ## Usage
 1. Install [Mumax3](https://mumax.github.io/install.html)
