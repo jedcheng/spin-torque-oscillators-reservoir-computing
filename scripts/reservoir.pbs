@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+## ask PBS for time (format hh:mm:ss)
+#PBS -l walltime=32:00:00
+#
+## ask for one node with 16 cpus and total 2gb memory (per node)
+#PBS -l select=1:ncpus=4:mem=24gb:ngpus=1:gpu_type=RTX6000
+# 
+#PBS -J 2-6
+## cd reservoir_mk2/scripts && qsub reservoir.pbs
+
+module load cuda/11.2.2 mumax/3.10b2 
+cp -a "${HOME}/reservoir_mk2/scripts/${PBS_ARRAY_INDEX}.mx3" "${TMPDIR}" 
+mumax3 "${PBS_ARRAY_INDEX}.mx3"
+## mumax3-convert -png "${PBS_ARRAY_INDEX}.out/*.ovf"
+cp -a * "${EPHEMERAL}/reservoir_mk2/scripts/"
