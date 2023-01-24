@@ -17,12 +17,12 @@ Change the simulation parameters in the `template.txt` file.
 2. Run `plot_final_result.py` to generate a plot of the MSE for configurations with different number of STOs.
 
 ## Results
-Predicting the Mackey Glass Equation using 25 STOs. The red line is the prediction, the blue line is the actual data.
+Predicting the Mackey Glass Equation using 25 STOs. 
+Although the prediction is not perfect, it will be clear when comparing to a naive linear regression model that the reservoir is able to capture the dynamics of the time series data.
 ![alt text](https://github.com/jedcheng/spin-torque-oscillators-reservoir-computing/blob/main/Results/25_Testing.png?raw=true)
 
 
 Of course it is vital to compare the results without the reservoir computing but just linear regression. Simple ML models usually "predicts" the data by reusing the previous data when dealing with time series data. 
-
 
 The prediction plot might looks good.
 ![alt text](https://github.com/jedcheng/spin-torque-oscillators-reservoir-computing/blob/main/Results/naive_linear_regression.png?raw=true)
